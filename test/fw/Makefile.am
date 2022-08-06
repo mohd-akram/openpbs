@@ -66,7 +66,7 @@ ptlpkg_pylib_pluginsdir = $(ptlpkg_pylib_utilsdir)/plugins
 
 dist_ptlpkg_pylib_plugins_PYTHON = $(wildcard $(srcdir)/ptl/utils/plugins/*.py)
 
-sysprofiledir = /etc/profile.d
+sysprofiledir = $(sysconfdir)/profile.d
 
 dist_sysprofile_DATA = \
 	ptl.csh \
@@ -99,7 +99,7 @@ dist_ptlmodulelib_PYTHON = \
 	ptl/lib/ptl_constants.py \
 	ptl/lib/ptl_expect_action.py \
 	ptl/lib/ptl_object.py \
-	ptl/lib/ptl_mom.py \          
+	ptl/lib/ptl_mom.py \
 	ptl/lib/ptl_sched.py \
 	ptl/lib/ptl_server.py \
 	ptl/lib/ptl_comm.py \

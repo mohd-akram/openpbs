@@ -45,7 +45,7 @@ dist_libinit_DATA = \
 	limits.pbs_mom \
 	limits.pbs_mom.compat \
 	limits.post_services \
-	limits.post_services.compat 
+	limits.post_services.compat
 
 libmpidir = $(libdir)/MPI
 
@@ -66,13 +66,13 @@ dist_pythonlib_PYTHON = \
 	pbs_bootcheck.py \
 	pbs_topologyinfo.py
 
-sysprofiledir = /etc/profile.d
+sysprofiledir = $(sysconfdir)/profile.d
 
 dist_sysprofile_DATA = \
 	pbs.csh \
 	pbs.sh
 
-unitfiledir = @_unitdir@
+unitfiledir = $(libdir)/systemd/system
 
 dist_unitfile_DATA = \
 	pbs.service
